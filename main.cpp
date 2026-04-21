@@ -57,10 +57,10 @@ int main()
     loadImage(Pixels, "phantoms/headPhantom.txt");
     Display image01Pixels(Pixels, "Phantom1");
     processImageWithPhantom(Pixels);
-    Display image01Sinogram(Pixels, "Phantom1_sinogram");
+    // Display image01Sinogram(Pixels, "Phantom1_sinogram");
     filterBackProjection(Pixels, newSinogram);
     normalizeImageColors(Pixels);
-    Display image01fbp(Pixels, "Phantom1_filtered");
+    // Display image01fbp(Pixels, "Phantom1_filtered");
     reconstructImageFromSinogram(newSinogram, reconstruction);
     normalizeImageColors(reconstruction);
     Display image01Reconstruction(reconstruction, "Phantom1_reconstruction");
